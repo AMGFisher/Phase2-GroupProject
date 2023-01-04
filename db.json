@@ -1,5 +1,6 @@
-[
-    {
+{
+    "opportunities": [
+     {
       "ID": 1,
       "Position": "Volunteer Writer",
       "Email": "volunteer@afreebird.org",
@@ -1647,4 +1648,5 @@
       "Latitude": 40.795741,
       "Longitude": -73.936919
     }
-  ]
+]
+}
