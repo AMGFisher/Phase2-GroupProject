@@ -1,4 +1,5 @@
 import Home from "./Home";
+import OppForm from "./OppForm";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 const App = () => {
   
@@ -6,6 +7,10 @@ const App = () => {
     {
       path: "/",
       element: <Home />,
+    },
+    {
+      path: "/addform",
+      element: <OppForm />
     }
   ]);
   return (
