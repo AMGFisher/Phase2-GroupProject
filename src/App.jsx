@@ -5,7 +5,7 @@ const App = () => {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home ops={ops} />,
+      element: <Home />,
     }
   ]);
   return (
