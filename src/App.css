@@ -3,7 +3,7 @@
     margin: 0;
 }
 
-/* .card {
+.card {
     text-align: center;
     /* border: rgb(0, 0, 0) solid 1px; */
     padding: 1rem;
@@ -31,4 +31,4 @@
   text-align: center;
   padding: 2rem;
   /* overflow: scroll; */
-} */
+}
