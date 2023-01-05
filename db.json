@@ -1647,34 +1647,6 @@
       "website": "http://www.littleistersfamily.org",
       "latitude": 40.795741,
       "longitude": -73.936919
-    },
-    {
-      "position": "aSD",
-      "email": "QWE",
-      "summary": "d",
-      "category": "qwerqw",
-      "organization": "rqwer",
-      "address": "qwer",
-      "city": "qwer",
-      "state": "qwer",
-      "postcode": "qwer",
-      "country": "qwer",
-      "website": "qwer",
-      "id": 104
-    },
-    {
-      "position": "sadf",
-      "email": "asdf",
-      "summary": "asdf",
-      "category": "asdf",
-      "organization": "asdf",
-      "address": "asdf",
-      "city": "asdf",
-      "state": "asdf",
-      "postcode": "asdf",
-      "country": "asdf",
-      "website": "asdf",
-      "id": 105
     }
   ]
 }

@@ -56,7 +56,16 @@ const AddForm = ({opps,setOpps}) => {
                     <input value={summaryInput} onChange={(e) => setSummaryInput(e.target.value)}></input>
 
                     <label>Category:</label>
-                    <input value={categoryInput} onChange={(e) => setCategoryInput(e.target.value)}></input>
+                    <select value={categoryInput} onChange={(e) => setCategoryInput(e.target.value)}>
+                        <option>Select Category...</option>
+                        <option value="Arts">Arts</option>
+                        <option value="Communities and Neighbors">Communities and Neighbors</option>
+                        <option value="Culture">Culture</option>
+                        <option value="Economic and Workforce Development">Economic and Workforce Development</option>
+                        <option value="Education">Education</option>
+                        <option value="Health and Well-Being">Health and Well-Being</option>
+                        <option value="Sports">Sports</option>
+                    </select>
 
                     <label>Organization:</label>
                     <input value={organizationInput} onChange={(e) => setOrganizationInput(e.target.value)}></input>

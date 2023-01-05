@@ -16,7 +16,7 @@ const Nav = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <nav className="navbar">
-          <div className="navbar-container">
+          <div className="navbar-container container">
             <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
               <MdOutlineVolunteerActivism className="navbar-icon" />I ❤️ NYC Volunteering
             </Link>
