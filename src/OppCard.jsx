@@ -33,8 +33,8 @@ const OppCard = ({ opp }) => {
     return (
         <div className="card">
             {renderIcon(opp.category)}
-            <h3>{opp.position}</h3>
-            <h5><a href={opp.website}>{opp.organization}</a></h5>
+            <h4>{opp.position}</h4>
+            <h6><a href={opp.website}>{opp.organization}</a></h6>
             <p>{opp.summary}</p>
             <p>{opp.address}, {opp.city}, {opp.state} {opp.postcode}</p>
             <button> <BiMailSend /> Volunteer </button>

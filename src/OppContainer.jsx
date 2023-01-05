@@ -19,7 +19,7 @@ const OppContainer = ({opps,category,searchTerm}) => {
     
     return(
         <div className='container'>
-        <h2>Opportunities in NYC</h2>
+        <h3>Opportunities in NYC</h3>
         {filteredOpps.map((opp)=>{
             return(
                 <div key={opp.id}>
