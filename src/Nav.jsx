@@ -16,70 +16,75 @@ const Nav = () => {
     <>
       <IconContext.Provider value={{ color: "#fff" }}>
         <nav className="navbar">
-          <div className="navbar-container container">
-            <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-              <MdOutlineVolunteerActivism className="navbar-icon" />I ❤️ NYC Volunteering
-            </Link>
+          <div className="navbar-container">
+            <div className="navbar-title">
+              <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
+                <MdOutlineVolunteerActivism className="navbar-icon" />I ❤️ NYC
+                Volunteering
+              </Link>
+            </div>
             <div className="menu-icon" onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
             </div>
-            <ul className={click ? "nav-menu active" : "nav-menu"}>
-              <li className="nav-item">
-                <NavLink
-                  to="/"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Home
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/opportunities"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Opportunities
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/addform"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Add An Opportunity
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/donate"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Donate
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  to="/contact"
-                  className={({ isActive }) =>
-                    "nav-links" + (isActive ? " activated" : "")
-                  }
-                  onClick={closeMobileMenu}
-                >
-                  Contact
-                </NavLink>
-              </li>
-            </ul>
+            <div className="nav-links-container">
+              <ul className={click ? "nav-menu active" : "nav-menu"}>
+                <li className="nav-item">
+                  <NavLink
+                    to="/"
+                    className={({ isActive }) =>
+                      "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMobileMenu}
+                  >
+                    Home
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/opportunities"
+                    className={({ isActive }) =>
+                      "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMobileMenu}
+                  >
+                    Opportunities
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/addform"
+                    className={({ isActive }) =>
+                      "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMobileMenu}
+                  >
+                    Add An Opportunity
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/donate"
+                    className={({ isActive }) =>
+                      "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMobileMenu}
+                  >
+                    Donate
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    to="/contact"
+                    className={({ isActive }) =>
+                      "nav-links" + (isActive ? " activated" : "")
+                    }
+                    onClick={closeMobileMenu}
+                  >
+                    Contact
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
         </nav>
       </IconContext.Provider>

@@ -7,6 +7,8 @@ import Nav from "./Nav";
 import { useState, useEffect } from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.css";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
   const AppLayout = () => {
     return (
