@@ -5,6 +5,8 @@ import { FaGraduationCap } from 'react-icons/fa'
 import { GrWorkshop } from 'react-icons/gr'
 import { RiHeartPulseLine } from 'react-icons/ri'
 import { FaGlobeAmericas } from 'react-icons/fa'
+import { FaDonate } from 'react-icons/fa'
+import { BiMailSend } from 'react-icons/bi'
 
 
 const OppCard = ({ opp }) => {
@@ -32,9 +34,11 @@ const OppCard = ({ opp }) => {
         <div className="card">
             {renderIcon(opp.category)}
             <h3>{opp.position}</h3>
-            <h5>{opp.organization}</h5>
+            <h5><a href={opp.website}>{opp.organization}</a></h5>
             <p>{opp.summary}</p>
             <p>{opp.address}, {opp.city}, {opp.state} {opp.postcode}</p>
+            <button> <BiMailSend /> Volunteer </button>
+            <button> <FaDonate /> Donate </button>
         </div>
     )
 }
