@@ -3,16 +3,16 @@ import OppCard from './OppCard'
 const OppContainer = ({opps}) => {
     
     return(
-        <>
-        <h3>Opp Container</h3>
+        <div className='container'>
+        <h2>Opportunities in NYC</h2>
         {opps.map((opp)=>{
             return(
-                <ul>
-                <OppCard key={opp.key} opp={opp} />
-                </ul>
+                <div key={opp.id}>
+                <OppCard opp={opp} />
+                </div>
             )
         })}
-        </>
+        </div>
     )
 }
 

@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.card {
+    text-align: center;
+    /* border: rgb(0, 0, 0) solid 1px; */
+    padding: 1rem;
+    width: 100rem;
+    height: 15rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background-color: #F2F6FB;
+    border: #CDE2FF;
+    border-radius: 20px;
+    color: rgb(4, 4, 4);
+}
+.container {
+  width: 100vw;
+  position: absolute;
+  top: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+  /* overflow: scroll; */
+}
