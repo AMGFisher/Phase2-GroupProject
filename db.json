@@ -1647,6 +1647,34 @@
       "website": "http://www.littleistersfamily.org",
       "latitude": 40.795741,
       "longitude": -73.936919
+    },
+    {
+      "position": "sadf",
+      "email": "",
+      "summary": "",
+      "category": "Economic and Workforce Development",
+      "organization": "",
+      "address": "asdf",
+      "city": "",
+      "state": "",
+      "postcode": "asdf",
+      "country": "asdf",
+      "website": "",
+      "id": 104
+    },
+    {
+      "position": "sadf",
+      "email": "",
+      "summary": "",
+      "category": "Sports",
+      "organization": "",
+      "address": "asdf",
+      "city": "",
+      "state": "",
+      "postcode": "asdf",
+      "country": "asdf",
+      "website": "",
+      "id": 105
     }
   ]
 }

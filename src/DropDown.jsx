@@ -1,7 +1,7 @@
-const DropDown = ({setBreed}) =>{
+const DropDown = ({setCategory}) =>{
     return (
         <form>
-            <select onChange={(e)=> setBreed(e.target.value)}>
+            <select onChange={(e)=> setCategory(e.target.value)}>
                 <option >All</option>
                 <option>Arts</option>
                 <option>Communities and Neighbors</option>
