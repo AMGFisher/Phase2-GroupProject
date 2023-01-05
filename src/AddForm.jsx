@@ -40,7 +40,7 @@ const AddForm = ({opps,setOpps}) => {
     }
 
     return (
-        <>
+        <div className="addform">
                 <form onSubmit={(e) => {
                     e.preventDefault()
                     handlePost()
@@ -85,7 +85,7 @@ const AddForm = ({opps,setOpps}) => {
                     }} type="submit">Submit</button>
 
                 </form>
-        </>
+        </div>
     )
 }
 export default AddForm;

@@ -1,17 +1,13 @@
-import OppContainer from "./OppContainer"
-import About from "./About"
+import About from "./About";
 
-const Home = ({opps}) => {
+const Home = () => {
+  return (
+    <div className="home">
+      <h1>Home!</h1>
 
+      <About />
+    </div>
+  );
+};
 
-
-    return(
-        <>
-        <h1>Home!</h1>
-        <OppContainer opps={opps} />
-        <About />
-        </>
-    )
-}
-
-export default Home
+export default Home;

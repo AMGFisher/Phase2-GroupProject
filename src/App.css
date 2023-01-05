@@ -2,7 +2,8 @@
     box-sizing: border-box;
     margin: 0;
 }
-.card {
+
+/* .card {
     text-align: center;
     /* border: rgb(0, 0, 0) solid 1px; */
     padding: 1rem;
@@ -18,15 +19,16 @@
     border-radius: 20px;
     color: rgb(4, 4, 4);
 }
+
 .container {
-  width: 100vw;
-  position: absolute;
-  top: 15vh;
+  /* width: 100vw; */
+  position: relative;
+  /* top: 15vh; */
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
   /* overflow: scroll; */
-}
+} */
