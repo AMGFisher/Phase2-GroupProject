@@ -1,7 +1,36 @@
-const OppCard = ({opp}) => {
+import { FaPaintBrush } from 'react-icons/fa'
+import { RiCommunityFill } from 'react-icons/ri'
+import { FaRunning } from 'react-icons/fa'
+import { FaGraduationCap } from 'react-icons/fa'
+import { GrWorkshop } from 'react-icons/gr'
+import { RiHeartPulseLine } from 'react-icons/ri'
+import { FaGlobeAmericas } from 'react-icons/fa'
 
-    return(
+
+const OppCard = ({ opp }) => {
+
+    function renderIcon(category) {
+        switch (category) {
+            case 'Arts':
+                return <FaPaintBrush />;
+            case 'Communities and Neighbors':
+                return <RiCommunityFill />;
+            case 'Culture':
+                return <FaGlobeAmericas />;
+            case 'Economic and Workforce Development':
+                return <GrWorkshop />;
+            case 'Education':
+                return <FaGraduationCap />;
+            case 'Health and Well-Being':
+                return <RiHeartPulseLine />;
+            case 'Sports':
+                return <FaRunning />;
+        }
+    }
+
+    return (
         <div className="card">
+            {renderIcon(opp.category)}
             <h3>{opp.position}</h3>
             <h5>{opp.organization}</h5>
             <p>{opp.summary}</p>
