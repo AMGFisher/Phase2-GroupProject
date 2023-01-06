@@ -1,7 +1,6 @@
-// import "./styles.css";
 import { useRef, useState, useEffect } from "react";
 
-export default function DonationForm() {
+export default function DonationForm({opp}) {
   const [amount, setAmount] = useState(0);
   const [donors, setDonors] = useState(0);
   const [total, setTotal] = useState(0);
@@ -43,7 +42,7 @@ export default function DonationForm() {
         donationGoal - total
       )} over goal`;
     } else {
-      return `$${donationGoal - total} still needed to fund this organization.`;
+      return `$${donationGoal - total} still needed to fund this opportunity!`;
     }
   }
 
@@ -80,7 +79,7 @@ export default function DonationForm() {
         {/* <h1>Only four days left to fund this project</h1> */}
         <p>
           Join the <span className="donors">{donors}</span> other donors who
-          have already supported this organization.
+          have already supported <b>{opp.organization}</b>
         </p>
         <form onSubmit={handleSubmit} className="donate-container">
           <label htmlFor="donation" className="sr-only">
