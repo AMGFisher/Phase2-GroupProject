@@ -88,11 +88,8 @@ const AddForm = ({opps,setOpps}) => {
 
                     <label className="addform-label">Website:</label>
                     <input className="form-control formInput" value={websiteInput} onChange={(e) => setWebsiteInput(e.target.value)}></input>
-
-                    <button className="submit-btn"style={{
-                        width: '200px',
-                        height: '50px'
-                    }} type="submit">Submit</button>
+                    
+                    <button className="submit-btn" type="submit">Submit</button>
 
                 </form>
         </div>

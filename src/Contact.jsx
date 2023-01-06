@@ -163,6 +163,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      {/* <img src="https://media0.giphy.com/media/3oKIPeSlkkwh3Pt6A8/200.webp?cid=ecf05e47zsyhfqjuyo5i968wdv3o5b1rmhuitijpa5wwampe&rid=200.webp&ct=g" alt=""></img> */}
     </div>
   );
 };

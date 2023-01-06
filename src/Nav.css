@@ -5,16 +5,18 @@
   }
   
   .navbar {
-    background: #1f1c1c;
+    background: #040d14;
     height: 80px;
     /* width: 100vw; */
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
-    position: sticky;
+    font-family: Garamond,Baskerville,Baskerville Old Face,Hoefler Text,Times New Roman,serif;
+    position: fixed;
     top: 0;
     z-index: 999;
+    border-bottom: 2px solid white;
   }
   
   .navbar-container {
@@ -35,7 +37,7 @@
     padding-right: 50px;
     padding-left: 50px;
   }
-  
+ 
   .navbar-logo {
     color: #fff;
     justify-self: start;
@@ -45,13 +47,14 @@
     display: flex;
     align-items: center;
     padding-top: 0.4rem;
-    width: 30vw;
+    width: fit-content;
     height: auto;
   }
   
   .navbar-icon {
     margin-right: 0.5rem;
   }
+
   
   .nav-menu {
     display: flex;

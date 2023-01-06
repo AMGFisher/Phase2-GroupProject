@@ -37,7 +37,9 @@ form {
 
 .formRow {
   margin: 10px 0 20px 0;
+  
 }
+
 
 .formInput {
   padding: 15px 10px;
@@ -85,7 +87,7 @@ form {
   padding: 15px 50px;
   border: 2px solid var(--green);
   border-radius: 10px;
-  margin-bottom: 25px;
+  margin-top: 25px;
 }
 
 .submit-btn:hover {
