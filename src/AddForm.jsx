@@ -69,7 +69,7 @@ const AddForm = ({opps,setOpps}) => {
                     </select>
 
                     <label className="addform-label">Organization:</label>
-                    <input className="form-control formInput" className="form-control formInput"value={organizationInput} onChange={(e) => setOrganizationInput(e.target.value)}></input>
+                    <input className="form-control formInput" value={organizationInput} onChange={(e) => setOrganizationInput(e.target.value)}></input>
 
                     <label className="addform-label">Address:</label>
                     <input className="form-control formInput" value={addressInput} onChange={(e) => setAddressInput(e.target.value)}></input>
