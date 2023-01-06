@@ -7,8 +7,13 @@ import { RiHeartPulseLine } from "react-icons/ri";
 import { FaGlobeAmericas } from "react-icons/fa";
 import { FaDonate } from "react-icons/fa";
 import { BiMailSend } from "react-icons/bi";
+import DonationForm from "./DonationForm";
+import { useState } from "react";
 
 const OppCard = ({ opp }) => {
+
+  const [donateOpen, setDonateOpen] = useState(false);
+
   function renderIcon(category) {
     switch (category) {
       case "Arts":
@@ -43,10 +48,13 @@ const OppCard = ({ opp }) => {
         {" "}
         <BiMailSend /> Volunteer{" "}
       </button>
-      <button>
+      <button onClick={()=>{
+        setDonateOpen(!donateOpen)
+      }}>
         {" "}
         <FaDonate /> Donate{" "}
       </button>
+        { donateOpen ? <DonationForm /> : null}
     </div>
   );
 };

@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 import {useState} from 'react'
 
 const OppList = ({ opps }) => {
-const [category,setCategory] = useState("All")
+const [category, setCategory] = useState("All")
 const [searchTerm, setSearchTerm] = useState("")
 
     
