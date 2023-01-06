@@ -1,6 +1,6 @@
 import { useRef, useState, useEffect } from "react";
 
-export default function DonationForm({opp}) {
+export default function DonationForm({ opp }) {
   const [amount, setAmount] = useState(0);
   const [donors, setDonors] = useState(0);
   const [total, setTotal] = useState(0);

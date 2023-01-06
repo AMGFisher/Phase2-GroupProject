@@ -6,17 +6,16 @@ import Nav from "./Nav";
 import { useState, useEffect } from "react";
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 
-
-  const AppLayout = () => {
-    return (
-      <>
-        <Nav />
-        <Outlet />
-      </>
-    );
-  };
+const AppLayout = () => {
+  return (
+    <>
+      <Nav />
+      <Outlet />
+    </>
+  );
+};
 
 const App = () => {
   const [opps, setOpps] = useState([]);
@@ -54,12 +53,13 @@ const App = () => {
         },
         {
           path: "*",
-          element: <div id="error-page">
-            <h1>Oops!</h1>
-            <p>Sorry, an unexpected error has occurred.</p>
-            <em>Not found</em>
-
-          </div>,
+          element: (
+            <div id="error-page">
+              <h1>Oops!</h1>
+              <p>Sorry, an unexpected error has occurred.</p>
+              <em>Not found</em>
+            </div>
+          ),
         },
       ],
     },

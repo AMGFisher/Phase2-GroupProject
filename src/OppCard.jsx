@@ -12,7 +12,6 @@ import VolunteerForm from "./VolunteerForm";
 import { useState } from "react";
 
 const OppCard = ({ opp }) => {
-
   const [volunteerOpen, setVolunteerOpen] = useState(false);
   const [donateOpen, setDonateOpen] = useState(false);
 
@@ -46,21 +45,25 @@ const OppCard = ({ opp }) => {
       <p>
         {opp.address}, {opp.city}, {opp.state} {opp.postcode}
       </p>
-      <button onClick={()=>{
-        setVolunteerOpen(!volunteerOpen)
-      }}>
+      <button
+        onClick={() => {
+          setVolunteerOpen(!volunteerOpen);
+        }}
+      >
         {" "}
         <BiMailSend /> Volunteer{" "}
       </button>
-      { volunteerOpen ? <VolunteerForm opp={opp} /> : null}
-      <br/>
-      <button onClick={()=>{
-        setDonateOpen(!donateOpen)
-      }}>
+      {volunteerOpen ? <VolunteerForm opp={opp} /> : null}
+      <br />
+      <button
+        onClick={() => {
+          setDonateOpen(!donateOpen);
+        }}
+      >
         {" "}
         <FaDonate /> Donate{" "}
       </button>
-        { donateOpen ? <DonationForm opp={opp} /> : null}
+      {donateOpen ? <DonationForm opp={opp} /> : null}
     </div>
   );
 };

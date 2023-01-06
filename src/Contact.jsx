@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.min.css";
 import "./Contact.css";
 
-
 const Contact = () => {
   const {
     register,
@@ -39,12 +38,12 @@ const Contact = () => {
         message,
       };
 
-    //   await emailjs.send(
-    //     process.env.REACT_APP_SERVICE_ID,
-    //     process.env.REACT_APP_TEMPLATE_ID,
-    //     templateParams,
-    //     process.env.REACT_APP_USER_ID
-    //   );
+      //   await emailjs.send(
+      //     process.env.REACT_APP_SERVICE_ID,
+      //     process.env.REACT_APP_TEMPLATE_ID,
+      //     templateParams,
+      //     process.env.REACT_APP_USER_ID
+      //   );
 
       reset();
       toastifySuccess();
@@ -59,7 +58,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12 text-center">
             <div className="contactForm">
-                <h1 className="form-title">Contact Us!</h1>
+              <h1 className="form-title">Contact Us!</h1>
               <form
                 id="contact-form"
                 onSubmit={handleSubmit(onSubmit)}
