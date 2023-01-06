@@ -5,7 +5,7 @@
   }
   
   .navbar {
-    background: #19191a;
+    background: #1f1c1c;
     height: 80px;
     /* width: 100vw; */
     display: flex;
@@ -44,6 +44,9 @@
     font-size: 2rem;
     display: flex;
     align-items: center;
+    padding-top: 0.4rem;
+    width: 30vw;
+    height: auto;
   }
   
   .navbar-icon {

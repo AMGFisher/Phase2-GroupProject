@@ -5,7 +5,12 @@
   --dark: #040d14;
   --green: #21ce99;
   padding: 2rem;
+  background-color: #040d14;
 }
+
+/* .opportunities {
+  background-color: #040d14;
+} */
 
 body {
   font-family: Poppins;
@@ -21,11 +26,13 @@ h1 {
 .App {
   height: 75vh;
   margin-top: 15vh;
+
 }
 
 form {
   margin-top: 20px;
   background: var(--dark);
+  width:60vw;
 }
 
 .formRow {

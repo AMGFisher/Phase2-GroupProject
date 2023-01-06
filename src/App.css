@@ -1,10 +1,47 @@
 * {
   box-sizing: border-box;
   margin: 0;
+
+}
+
+:root {
+  background-color: #040d14 ;
+
+}
+
+.category-dropdown {
+  padding: 15px 10px;
+  background-color: var(--light);
+  box-shadow: 0 0 0 2px var(--green);
+  border: none;
+  color: var(--green);
+  
+}
+
+.opportunities {
+  background-color: #040d14 ;
+  --light: #d0d1d3;
+  --dark: #040d14;
+  --green: #21ce99;
+  padding: 2rem;
+}
+
+
+:root{
+  background-color: #040d14;
+  --light: #d0d1d3;
+  --dark: #040d14;
+  --green: #21ce99;
+  padding: 2rem;
+}
+
+.home-img {
+width: 100vw;
+background-color: #040d14;
+/* right: 10px; */
 }
 
 .card {
-  text-align: center;
   /* border: rgb(0, 0, 0) solid 1px; */
   padding: 1rem;
   width: 80vw;
@@ -20,6 +57,11 @@
   color: rgb(4, 4, 4);
 }
 
+.card-p {
+  text-align: justify;  /* For Edge */
+  text-align-last: left;
+}
+
 .container {
 /* width: 100vw; */
 position: relative;
@@ -32,3 +74,91 @@ text-align: center;
 padding: 2rem;
 /* overflow: scroll; */
 }
+
+.search-bar {
+ display: block;
+ justify-content: center;
+ align-items: center;
+ width: 25rem;
+ cursor: text;
+ padding-left: 1rem;
+ padding: 15px 10px;
+  background-color: var(--dark);
+  box-shadow: 0 0 0 2px var(--green);
+  border: none;
+  color: white;
+}
+
+.dropdown {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  cursor: text;
+  padding-left: 1rem;
+  padding: 15px 10px;
+   background-color: var(--dark);
+   box-shadow: 0 0 0 2px var(--green);
+   border: none;
+   color: white;
+   
+}
+
+.addform {
+    width: 100vw;
+    position: absolute;
+    top: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    --light: #d0d1d3;
+  --dark: #040d14;
+  --green: #21ce99;
+  padding: 2rem;
+  }
+
+
+
+  .addform-label{
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    padding-top: 0.5rem;
+  }
+
+  .form-title {
+    color: #21ce99;
+    font-size: 40px;
+    font-weight: 500;
+    /* margin-bottom: 2rem;
+    margin-top: 3rem; */
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-shadow: -1px 1px 0 #a4a8aa, 1px 1px 0 #09c4b4, 1px -1px 0 #2f7673,
+      -1px -1px 0 #c6c23f;
+      /* padding-top: 2rem; */
+  }
+
+  .form-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+/* 
+.add-form-heading {
+  position: fixed;
+ justify-content: center;
+
+} */
+

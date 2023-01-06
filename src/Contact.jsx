@@ -59,7 +59,7 @@ const Contact = () => {
         <div className="row">
           <div className="col-12 text-center">
             <div className="contactForm">
-                <h1>Contact Us!</h1>
+                <h1 className="form-title">Contact Us!</h1>
               <form
                 id="contact-form"
                 onSubmit={handleSubmit(onSubmit)}

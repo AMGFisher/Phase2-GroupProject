@@ -41,22 +41,23 @@ const AddForm = ({opps,setOpps}) => {
 
     return (
         <div className="addform">
+            <h3 className="form-title">Need some volunteers? Add your own opportunity below!</h3>
                 <form onSubmit={(e) => {
                     e.preventDefault()
                     handlePost()
                 }} style={{ display: 'flex', flexDirection: 'column' }}>
 
-                    <label>Position:</label>
-                    <input value={positionInput} onChange={(e) => setPositionInput(e.target.value)}></input>
+                    <label className="addform-label">Position:</label>
+                    <input className="form-control formInput" value={positionInput} onChange={(e) => setPositionInput(e.target.value)}></input>
 
-                    <label>Email:</label>
-                    <input value={emailInput} onChange={(e) => setEmailInput(e.target.value)}></input>
+                    <label className="addform-label">Email:</label>
+                    <input className="form-control formInput" value={emailInput} onChange={(e) => setEmailInput(e.target.value)}></input>
 
-                    <label>Summary:</label>
-                    <input value={summaryInput} onChange={(e) => setSummaryInput(e.target.value)}></input>
+                    <label className="addform-label">Summary:</label>
+                    <input className="form-control formInput" value={summaryInput} onChange={(e) => setSummaryInput(e.target.value)}></input>
 
-                    <label>Category:</label>
-                    <select value={categoryInput} onChange={(e) => setCategoryInput(e.target.value)}>
+                    <label className="addform-label">Category:</label>
+                    <select className="category-dropdown"  value={categoryInput} onChange={(e) => setCategoryInput(e.target.value)}>
                         <option>Select Category...</option>
                         <option value="Arts">Arts</option>
                         <option value="Communities and Neighbors">Communities and Neighbors</option>
@@ -67,28 +68,28 @@ const AddForm = ({opps,setOpps}) => {
                         <option value="Sports">Sports</option>
                     </select>
 
-                    <label>Organization:</label>
-                    <input value={organizationInput} onChange={(e) => setOrganizationInput(e.target.value)}></input>
+                    <label className="addform-label">Organization:</label>
+                    <input className="form-control formInput" className="form-control formInput"value={organizationInput} onChange={(e) => setOrganizationInput(e.target.value)}></input>
 
-                    <label>Address:</label>
-                    <input value={addressInput} onChange={(e) => setAddressInput(e.target.value)}></input>
+                    <label className="addform-label">Address:</label>
+                    <input className="form-control formInput" value={addressInput} onChange={(e) => setAddressInput(e.target.value)}></input>
 
-                    <label>City:</label>
-                    <input value={cityInput} onChange={(e) => setCityInput(e.target.value)}></input>
+                    <label className="addform-label">City:</label>
+                    <input className="form-control formInput" value={cityInput} onChange={(e) => setCityInput(e.target.value)}></input>
 
-                    <label>State:</label>
-                    <input value={stateInput} onChange={(e) => setStateInput(e.target.value)}></input>
+                    <label className="addform-label">State:</label>
+                    <input className="form-control formInput" value={stateInput} onChange={(e) => setStateInput(e.target.value)}></input>
 
-                    <label>Postcode:</label>
-                    <input value={postcodeInput} onChange={(e) => setPostcodeInput(e.target.value)}></input>
+                    <label className="addform-label">Postcode:</label>
+                    <input className="form-control formInput" value={postcodeInput} onChange={(e) => setPostcodeInput(e.target.value)}></input>
 
-                    <label>Country:</label>
-                    <input value={countryInput} onChange={(e) => setCountryInput(e.target.value)}></input>
+                    <label className="addform-label">Country:</label>
+                    <input className="form-control formInput" value={countryInput} onChange={(e) => setCountryInput(e.target.value)}></input>
 
-                    <label>Website:</label>
-                    <input value={websiteInput} onChange={(e) => setWebsiteInput(e.target.value)}></input>
+                    <label className="addform-label">Website:</label>
+                    <input className="form-control formInput" value={websiteInput} onChange={(e) => setWebsiteInput(e.target.value)}></input>
 
-                    <button style={{
+                    <button className="submit-btn"style={{
                         width: '200px',
                         height: '50px'
                     }} type="submit">Submit</button>

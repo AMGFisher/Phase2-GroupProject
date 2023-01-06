@@ -1,7 +1,8 @@
 const DropDown = ({setCategory}) =>{
     return (
         <form>
-            <select onChange={(e)=> setCategory(e.target.value)}>
+            <label className="addform-label">Category</label>
+            <select className="dropdown" onChange={(e)=> setCategory(e.target.value)}>
                 <option >All</option>
                 <option>Arts</option>
                 <option>Communities and Neighbors</option>

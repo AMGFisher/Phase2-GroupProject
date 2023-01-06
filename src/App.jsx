@@ -1,7 +1,6 @@
 import Home from "./Home";
 import OppList from "./OppList";
 import AddForm from "./AddForm";
-import Donate from "./Donate";
 import Contact from "./Contact";
 import Nav from "./Nav";
 import { useState, useEffect } from "react";
@@ -48,10 +47,6 @@ const App = () => {
         {
           path: "/addform",
           element: <AddForm opps={opps} setOpps={setOpps} />,
-        },
-        {
-          path: "/donate",
-          element: <Donate />,
         },
         {
           path: "/contact",

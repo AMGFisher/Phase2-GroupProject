@@ -19,7 +19,7 @@ const Nav = () => {
           <div className="navbar-container">
             <div className="navbar-title">
               <Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
-                <MdOutlineVolunteerActivism className="navbar-icon" />I ❤️ NYC
+                <MdOutlineVolunteerActivism className="navbar-icon" />I 💙 NYC
                 Volunteering
               </Link>
             </div>
@@ -59,17 +59,6 @@ const Nav = () => {
                     onClick={closeMobileMenu}
                   >
                     Add An Opportunity
-                  </NavLink>
-                </li>
-                <li className="nav-item">
-                  <NavLink
-                    to="/donate"
-                    className={({ isActive }) =>
-                      "nav-links" + (isActive ? " activated" : "")
-                    }
-                    onClick={closeMobileMenu}
-                  >
-                    Donate
                   </NavLink>
                 </li>
                 <li className="nav-item">
