@@ -10,7 +10,7 @@ export default function DonationForm() {
   const progress = useRef();
   const arrow = useRef();
 
-  const donationGoal = 5000;
+  const donationGoal = 1000;
 
   useEffect(() => {
     handleProgressTrackers();
@@ -39,11 +39,11 @@ export default function DonationForm() {
 
   function toggleDonationTracker() {
     if (total >= donationGoal) {
-      return `Project has been funded! $${Math.abs(
+      return `Organization has been funded! $${Math.abs(
         donationGoal - total
       )} over goal`;
     } else {
-      return `$${donationGoal - total} still needed to fund this project.`;
+      return `$${donationGoal - total} still needed to fund this organization.`;
     }
   }
 
@@ -77,27 +77,26 @@ export default function DonationForm() {
         <div className="progress-container">
           <div ref={progress} className="progress-bar"></div>
         </div>
-        <h1>Only four days left to fund this project</h1>
+        {/* <h1>Only four days left to fund this project</h1> */}
         <p>
           Join the <span className="donors">{donors}</span> other donors who
-          have already supported the project.
+          have already supported this organization.
         </p>
-        <form onSubmit={handleSubmit} className="form-container">
+        <form onSubmit={handleSubmit} className="donate-container">
           <label htmlFor="donation" className="sr-only">
             Donation Amount
           </label>
           <div className="input-container">
-            <span className="dollar">$</span>
             <input
               ref={input}
               id="donation"
               onChange={handleChange}
               type="number"
               min="5"
-              placeholder="25"
+              placeholder="$25"
             />
           </div>
-          <button>Give Now</button>
+          <button>Donate Now</button>
         </form>
       </article>
     </>
