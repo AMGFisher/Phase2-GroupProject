@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "./Nav.css";
 import { MdOutlineVolunteerActivism } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
